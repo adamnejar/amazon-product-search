@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #0073e6;
+    border-color: #0073e6;
+}
+
+.btn-primary:hover {
+    background-color: #005bb5;
+    border-color: #005bb5;
+}
+
+.form-control {
+    border-radius: 4px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

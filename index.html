@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Search</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card p-4 shadow-lg">
+            <h1 class="text-center mb-4">Get Inspired POD v2</h1>
+            <div class="search-bar form-row align-items-center mb-4">
+                <div class="col-auto">
+                    <label for="openIn" class="sr-only">Open In</label>
+                    <select id="openIn" class="form-control mb-2">
+                        <option value="newTab">New Tab</option>
+                        <option value="sameTab">Same Tab</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <input type="text" id="searchQuery" class="form-control mb-2" placeholder="Product Search">
+                </div>
+                <div class="col-auto">
+                    <button onclick="searchAmazon()" class="btn btn-primary mb-2"><i class="fas fa-search"></i> Search All</button>
+                </div>
+            </div>
+            <div class="filters form-row align-items-center">
+                <div class="col-auto">
+                    <label for="product" class="sr-only">Product</label>
+                    <select id="product" class="form-control mb-2">
+                        <option value="T-Shirt">T-Shirt</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <label for="sortBy" class="sr-only">Sort by</label>
+                    <select id="sortBy" class="form-control mb-2">
+                        <option value="newest">Newest</option>
+                        <option value="last30days">Last 30 Days</option>
+                        <option value="featured">Featured</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <label for="marketplace" class="sr-only">Marketplace</label>
+                    <select id="marketplace" class="form-control mb-2">
+                        <option value="com">Com</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <button onclick="searchByFilter()" class="btn btn-primary mb-2"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+            <div id="results"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
